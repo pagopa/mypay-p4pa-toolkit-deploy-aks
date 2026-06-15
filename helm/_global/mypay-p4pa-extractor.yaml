@@ -69,8 +69,11 @@ microservice-chart:
     APPLICATIONINSIGHTS_PREVIEW_PROFILER_ENABLED: "false"
     ENABLE_AUDIT_APPENDER: "TRUE"
 
-  #envSecret:
+  envSecret:
     # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
+    MP4_DB_HOST: db-host
+    MPV4_DB_HOST: db-host
+    FESP_DB_HOST: db-host
 
   # nodeSelector: {}
 
