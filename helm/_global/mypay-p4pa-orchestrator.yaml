@@ -56,11 +56,11 @@ microservice-chart:
     runAsUser: 65534
     runAsGroup: 65534
 
-  externalConfigMapFiles:
-    create: true
-    configMaps:
-      - name: appinsights-config
-        key: applicationinsights.json
+  # externalConfigMapFiles:
+  #   create: true
+  #   configMaps:
+  #     - name: appinsights-config
+  #       key: applicationinsights.json
 
   envConfig:
     APPLICATIONINSIGHTS_ROLE_NAME: "mypay-p4pa-orchestrator"
@@ -70,7 +70,7 @@ microservice-chart:
     ENABLE_AUDIT_APPENDER: "TRUE"
 
   envSecret:
-    APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
+    # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
 
   # nodeSelector: {}
 
