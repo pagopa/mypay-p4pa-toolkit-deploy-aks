@@ -69,9 +69,16 @@ microservice-chart:
     APPLICATIONINSIGHTS_PREVIEW_PROFILER_ENABLED: "false"
     ENABLE_AUDIT_APPENDER: "TRUE"
 
+    EXTRACTOR_BASE_URL: "http://mypay-p4pa-extractor:8080"
+
   envSecret:
     # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
-    PU_AUTH_CLIENT_SECRET: piattaforma-unitaria-client-secret # TODO replace with SIL secret
+
+    CLIENT_ID: mypay-p4pa-toolkit-client-id
+    CLIENT_SECRET: mypay-p4pa-toolkit-client-secret
+
+    PU_AUTH_CLIENT_ID: mypay-p4pa-toolkit-pu-auth-client-id
+    PU_AUTH_CLIENT_SECRET: mypay-p4pa-toolkit-pu-auth-client-secret
 
   # nodeSelector: {}
 

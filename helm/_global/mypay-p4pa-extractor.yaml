@@ -69,11 +69,33 @@ microservice-chart:
     APPLICATIONINSIGHTS_PREVIEW_PROFILER_ENABLED: "false"
     ENABLE_AUDIT_APPENDER: "TRUE"
 
+    STORAGE_PATH: "/tmp/data/extractions" # TODO should it be persistent? should it be shared?
+
+    MP4_DB_NAME: "mypay_migration_toolkit"
+    FESP_DB_NAME: "fesp_migration_toolkit"
+    MPV4_DB_NAME: "mypivot_migration_toolkit"
+
+    MYPIVOT_ENABLED: "true"
+
+    MYDICTIONARY_BASE_URL: "http://p4pa-mocks-microservice-chart.payhub.svc.cluster.local:8080/mydictionary"
+    MYDICT_API_KEY: "MYDICTIONARY_DUMMY_API_KEY"
+
   envSecret:
     # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
     MP4_DB_HOST: db-host
-    MPV4_DB_HOST: db-host
+    MP4_DB_USER: db-migration-toolkit-login-username
+    MP4_DB_PASSWORD: db-migration-toolkit-login-password
+
     FESP_DB_HOST: db-host
+    FESP_DB_USER: db-migration-toolkit-login-username
+    FESP_DB_PASSWORD: db-migration-toolkit-login-password
+
+    MPV4_DB_HOST: db-host
+    MPV4_DB_USER: db-migration-toolkit-login-username
+    MPV4_DB_PASSWORD: db-migration-toolkit-login-password
+
+    CLIENT_ID: mypay-p4pa-toolkit-client-id
+    CLIENT_SECRET: mypay-p4pa-toolkit-client-secret
 
   # nodeSelector: {}
 
