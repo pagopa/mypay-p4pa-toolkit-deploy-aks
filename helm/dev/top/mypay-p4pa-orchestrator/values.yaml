@@ -53,8 +53,7 @@ microservice-chart:
     #  -javaagent:/app/applicationinsights-agent.jar
     #  -Dapplicationinsights.configuration.file=/mnt/file-config-external/appinsights-config/applicationinsights.json
 
-    PU_AUTH_BASE_URL: "https://api.dev.p4pa.pagopa.it/pu/auth"
-    PU_MIGRATION_BASE_URL: "https://api.dev.p4pa.pagopa.it/pu/migration"
+    PU_BASE_URL: "https://api.dev.p4pa.pagopa.it"
 
   keyvault:
     name: "p4pa-d-payhub-kv"
