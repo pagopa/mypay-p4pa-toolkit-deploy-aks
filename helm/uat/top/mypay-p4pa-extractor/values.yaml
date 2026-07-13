@@ -53,6 +53,7 @@ microservice-chart:
     #  -Dapplicationinsights.configuration.file=/mnt/file-config-external/appinsights-config/applicationinsights.json
 
     BROKER_CF: "59835580347"
+    BROKER_IPA_CODE: "PT_MYPAY2PU_UAT"
 
   keyvault:
     name: "p4pa-u-payhub-kv"
