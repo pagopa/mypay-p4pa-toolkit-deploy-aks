@@ -56,6 +56,13 @@ microservice-chart:
     runAsUser: 65534
     runAsGroup: 65534
 
+  persistentVolumeClaimsMounts:
+    create: true
+    mounts:
+      - name: share
+        pvcName: mypay-p4pa-migration-toolkit-fileshare-pvc
+        mountPath: "/shared"
+
   # externalConfigMapFiles:
   #   create: true
   #   configMaps:
@@ -69,7 +76,7 @@ microservice-chart:
     APPLICATIONINSIGHTS_PREVIEW_PROFILER_ENABLED: "false"
     ENABLE_AUDIT_APPENDER: "TRUE"
 
-    STORAGE_PATH: "/tmp/data/extractions" # TODO should it be persistent? should it be shared?
+    STORAGE_PATH: "/shared/data/extractions"
 
     MP4_DB_NAME: "mypay_migration_toolkit"
     FESP_DB_NAME: "fesp_migration_toolkit"
