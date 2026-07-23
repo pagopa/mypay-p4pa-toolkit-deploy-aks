@@ -87,6 +87,9 @@ microservice-chart:
     MYDICTIONARY_BASE_URL: "http://p4pa-mocks-microservice-chart.payhub.svc.cluster.local:8080/mydictionary"
     MYDICT_API_KEY: "MYDICTIONARY_DUMMY_API_KEY"
 
+    MYPAY_PROP_NOTIFICA_IO_MARKDOWN: "C'è un avviso da pagare intestato a {anag_pagatore} e relativo a {desc_pagamento}.<br />Devi pagare: {importo} ?<br />Entro il: {data_scadenza}<br />Puoi pagare direttamente in app premendo ?Vedi Avviso?, oppure tramite tutti i canali di pagamento della piattaforma pagoPA e le altre modalità di pagamento offerte dall'ente creditore.<br />Se hai già provveduto a pagare l'avviso ignora questo messaggio.<br />Per maggiori informazioni o per richiedere assistenza, contattaci tramite i canali che trovi nella scheda servizio.<br />In fase di pagamento, se previsto dall'ente, l'importo riportato nel messaggio potrebbe subire variazioni."
+    MYPAY_PROP_NOTIFICA_IO_SUBJECT: "Hai un nuovo avviso di pagamento"
+
   envSecret:
     # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
     MP4_DB_HOST: db-host
