@@ -1,7 +1,7 @@
 microservice-chart:
   image:
     repository: ghcr.io/pagopa/mypay-p4pa-orchestrator
-    tag: develop-latest
+    tag: develop-latest@sha256:ab59c238e1d4edfecb24af15b465ea564d2a503724190d2e07638839a3edba60
     pullPolicy: Always
 
   ingress:
