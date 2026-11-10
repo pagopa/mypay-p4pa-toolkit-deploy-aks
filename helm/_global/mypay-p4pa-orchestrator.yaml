@@ -80,6 +80,8 @@ microservice-chart:
 
     ORCHESTRATOR_DB_NAME: "orchestrator_migration_toolkit"
 
+    ORCHESTRATOR_DB_HOST: "testPropReading"
+
   envSecret:
     # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
 
@@ -89,10 +91,9 @@ microservice-chart:
     PU_AUTH_CLIENT_ID: mypay-p4pa-toolkit-pu-auth-client-id
     PU_AUTH_CLIENT_SECRET: mypay-p4pa-toolkit-pu-auth-client-secret
 
-    ORCHESTRATOR_DB_HOST: db-host
+#    ORCHESTRATOR_DB_HOST: db-host
     ORCHESTRATOR_DB_USER: db-migration-toolkit-write-login-username
     ORCHESTRATOR_DB_PASSWORD: db-migration-toolkit-write-login-password
-
 
   # nodeSelector: {}
 
