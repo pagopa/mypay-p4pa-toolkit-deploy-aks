@@ -54,6 +54,7 @@ microservice-chart:
     #  -Dapplicationinsights.configuration.file=/mnt/file-config-external/appinsights-config/applicationinsights.json
 
     PU_BASE_URL: "https://api.dev.p4pa.pagopa.it"
+    PU_AUTH_BASE_URL: "https://hub.internal.dev.p4pa.pagopa.it/p4paauth/payhub"
     BROKER_IPA_CODE: "PT_MYPAY2PU_DEV"
 
   keyvault:
