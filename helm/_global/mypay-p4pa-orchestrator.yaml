@@ -80,6 +80,8 @@ microservice-chart:
 
     ORCHESTRATOR_DB_NAME: "orchestrator_migration_toolkit"
 
+    STORAGE_PATH_EXTRACTOR_OUTPUT: "/shared/data/extractions"
+
   envSecret:
     # APPLICATIONINSIGHTS_CONNECTION_STRING: appinsights-connection-string
 

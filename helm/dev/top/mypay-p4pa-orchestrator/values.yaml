@@ -54,7 +54,6 @@ microservice-chart:
     #  -Dapplicationinsights.configuration.file=/mnt/file-config-external/appinsights-config/applicationinsights.json
 
     PU_BASE_URL: "https://api.dev.p4pa.pagopa.it"
-    STORAGE_PATH_EXTRACTOR_OUTPUT: "/shared/data/extractions"
     BROKER_IPA_CODE: "PT_MYPAY2PU_DEV"
 
   keyvault:
