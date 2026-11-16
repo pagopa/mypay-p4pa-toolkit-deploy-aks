@@ -55,7 +55,7 @@ microservice-chart:
 
     PU_BASE_URL: "https://api.dev.p4pa.pagopa.it"
 #    PU_AUTH_BASE_URL: "https://hub.internal.dev.p4pa.pagopa.it/p4paauth/payhub"
-    STORAGE_PATH: "/shared/data/extractions"
+    STORAGE_PATH_EXTRACTOR_OUTPUT: "/shared/data/extractions"
     BROKER_IPA_CODE: "PT_MYPAY2PU_DEV"
 
   keyvault:
