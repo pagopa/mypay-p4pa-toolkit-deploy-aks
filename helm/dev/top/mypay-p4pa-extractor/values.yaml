@@ -1,7 +1,7 @@
 microservice-chart:
   image:
     repository: ghcr.io/pagopa/mypay-p4pa-extractor
-    tag: develop-latest
+    tag: develop-latest@sha256:4cdbb8ba924b86c75e842d485e7abd78bd6c8c751b7a84e3dc9f62d7f6deae02
     pullPolicy: Always
 
   ingress:
